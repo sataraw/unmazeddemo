@@ -1,4 +1,5 @@
 import './App.css';
+import logo from './images/Unmazed Schwarz.svg'
 import firebase  from 'firebase/compat/app'
 import 'firebase/compat/firestore'
 
@@ -18,7 +19,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>HELLO</h1>
+        <img src={logo} alt="logo" className="logo"></img>
+        <p>Work in Progress 🚀</p>
       </header>
     </div>
   );

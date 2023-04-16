@@ -15,6 +15,8 @@
 }
 
 .App-header {
+  overflow: hidden;
+  position:relative;
   background-color: #e3dac9;
   min-height: 100vh;
   display: flex;
@@ -36,4 +38,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-header-tape1 {
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(-25deg) translate(10rem, 0px);
+}
+.App-header-tape2 {
+  position:absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-35deg) translate(-10rem, 0px);
 }

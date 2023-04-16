@@ -1,5 +1,6 @@
 import './App.css';
 import logo from './images/Unmazed Schwarz.svg'
+import construction from './images/construction.svg'
 import firebase  from 'firebase/compat/app'
 import 'firebase/compat/firestore'
 
@@ -19,10 +20,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src={construction} className="App-header-tape1"></img>
         <img src={logo} alt="logo" className="logo"></img>
-        <p>Work in Progress 🚀</p>
+        <p>This site is under construction 🏗️</p>  
+        <img src={construction} className="App-header-tape2"></img>
       </header>
-    </div>
+    </div> 
   );
 }
 

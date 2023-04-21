@@ -3,6 +3,13 @@ import logo from './images/Unmazed Schwarz.svg'
 import construction from './images/construction.svg'
 import firebase  from 'firebase/compat/app'
 import 'firebase/compat/firestore'
+import React, { useState } from 'react';
+import ToolBar from './ToolBar';
+import currentPicture from './images/testImage.jpg'
+import Slider from './Slider'
+
+
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyC4y1MM8bx8Qi2qGWDYRXzCClJkyK-e7Ys",
@@ -17,16 +24,22 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig)
 
 function App() {
+
+  const [milliSeconds, setMilliSeconds] = useState(66);
+
+  function handleSizeChange(event) {
+    setMilliSeconds(event.target.value);
+  }
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={construction} className="App-header-tape1"></img>
-        <img src={logo} alt="logo" className="logo"></img>
-        <p>This site is under construction 🏗️</p>  
-        <img src={construction} className="App-header-tape2"></img>
-      </header>
+      <img src={currentPicture} alt='testImage' className='testImage'></img>
+      <Slider value={milliSeconds} onChange={handleSizeChange} />
+      <ToolBar />
     </div> 
   );
 }
+
 
 export default App;

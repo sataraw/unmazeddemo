@@ -5,7 +5,7 @@ import firebase  from 'firebase/compat/app'
 import 'firebase/compat/firestore'
 import React, { useState } from 'react';
 import ToolBar from './ToolBar';
-import currentPicture from './images/testImage.jpg'
+import currentImage from './images/testImage.png'
 import Slider from './Slider'
 
 
@@ -33,11 +33,17 @@ function App() {
 
   
   return (
-    <div className="App">
-      <img src={currentPicture} alt='testImage' className='testImage'></img>
-      <Slider value={milliSeconds} onChange={handleSizeChange} />
-      <ToolBar />
-    </div> 
+    <div className='OutsideWrapper'>
+      <div className='AppWrapper'>
+        <div className="App">
+          <div className='imgWrapper'>
+            <img src={currentImage} className='currentImage'></img>
+            <Slider value={milliSeconds} onChange={handleSizeChange} />
+          </div>
+        </div>
+        <ToolBar />
+      </div>
+    </div>
   );
 }
 

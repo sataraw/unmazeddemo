@@ -9,21 +9,21 @@ function ToolBar() {
     return (
         <div className='toolbar'>
             <button id='GoButtonId'>
-               <img src={goButton} className='GoButton'></img>
+               <img src={goButton} className='toolbarImage'></img>
                <div>
-                    <span>Go</span>
+                    <span className='toolbarText'>Go</span>
                 </div>
             </button>
             <button id='SupportButtonId'>
-                <img src={supportButton} className='SupportButton'></img>
+                <img src={supportButton} className='toolbarImage'></img>
                 <div>
-                    <span>Support</span>
+                    <span className='toolbarText'>Support</span>
                 </div>
             </button>
             <button id='SettingButtonId'>
-                <img src={settingButton} className='SettingButton'></img>
+                <img src={settingButton} className='toolbarImage'></img>
                 <div>
-                    <span>Settings</span>
+                    <span className='toolbarText'>Settings</span>
                 </div>
             </button>
             

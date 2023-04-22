@@ -12,7 +12,7 @@ function Slider() {
         <div className='sliderWrapper'>
             <div className='sliderButtonWrapper'>
                 <button id='sliderButton'>
-                    <img src={returnButton} className='returnButtonImage' alt='Go Back'></img>
+                    <img src={returnButton} className='returnButtonImage'></img>
                 </button>
             </div>
             <div className='slider'>

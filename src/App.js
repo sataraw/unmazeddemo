@@ -1,12 +1,9 @@
 import './App.css';
-import logo from './images/Unmazed Schwarz.svg'
-import construction from './images/construction.svg'
 import firebase  from 'firebase/compat/app'
 import 'firebase/compat/firestore'
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import ToolBar from './ToolBar';
-import currentImage from './images/testImage.png'
-import Slider from './Slider'
+import Content from './Content';
 
 
 
@@ -24,22 +21,11 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig)
 
 function App() {
-
-  const [milliSeconds, setMilliSeconds] = useState(66);
-
-  function handleSizeChange(event) {
-    setMilliSeconds(event.target.value);
-  }
-
-  
   return (
     <div className='OutsideWrapper'>
       <div className='AppWrapper'>
         <div className="App">
-          <div className='imgWrapper'>
-            <img src={currentImage} className='currentImage'></img>
-            <Slider value={milliSeconds} onChange={handleSizeChange} />
-          </div>
+          <Content />
         </div>
         <ToolBar />
       </div>

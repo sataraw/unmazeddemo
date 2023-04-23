@@ -1,4 +1,4 @@
-import './App.css';
+import './Style/App.css';
 import firebase  from 'firebase/compat/app'
 import 'firebase/compat/firestore'
 import React, { useEffect } from 'react';

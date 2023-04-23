@@ -1,28 +1,19 @@
-import { useState, useEffect } from 'react'; 
-import Slider from './Slider';
-import currentImage from './images/testImage.png'
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+import Add from "@mui/icons-material/VolumeDown";
+import Remove from "@mui/icons-material/VolumeUp";
+import Slider from "@mui/material/Slider";
+import currentImage from "./images/testImage.png";
+import ContinuousSlider from './ContinuousSlider'
 
 function Content() {
-  const [milliSeconds, setMilliSeconds] = useState(66);
-  
-  useEffect(() => {
-       const handleContextmenu = e => {
-           e.preventDefault()
-       }
-       document.addEventListener('contextmenu', handleContextmenu)
-       return function cleanup() {
-        document.removeEventListener('contextmenu', handleContextmenu)
-       } 
-  },[])
 
-  function handleSizeChange(event) {
-    setMilliSeconds(event.target.value);
-  }
-    return (
-    <div className='contentWrapper'>
-            <img src={currentImage} className='currentImage'></img>
-            <Slider value={milliSeconds} onChange={handleSizeChange} />
+  return (
+    <div className="contentWrapper">
+      <img src={currentImage} className="currentImage"></img>
+        <ContinuousSlider/>
     </div>
-    );
+  );
 }
 export default Content;

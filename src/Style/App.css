@@ -10,7 +10,7 @@
 .AppWrapper {
   width: 100%;
   max-width: 30rem;
-    display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: stretch;
   flex-direction: column;
@@ -85,7 +85,7 @@
 }
 
 .ReturnButton {
-  transform: translate(0px, -20px);
+  transform: translate(0px, 20px);
 }
 .SliderContainer {
   position: absolute;
@@ -95,5 +95,21 @@
   bottom: 0;
   right: 0;
   margin-right: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 2rem;
+}
+.SliderIcon {
+  width: 100%;
+  transform: scale(1.5);
+  height: 100%;
+}
+.SliderIcon #Add{
+  margin-top: 10px;
+}
+.SearchBarContainer {
+  margin-top: 5%;
+  z-index: 1;
+}
+.SearchBar {
+  height: 50px;
+  width: 100%;
 }

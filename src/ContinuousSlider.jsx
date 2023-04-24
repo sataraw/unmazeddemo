@@ -49,8 +49,8 @@ export default function ContinuousSlider() {
     return (
       <div className="SliderContainer">
         <Box sx={{ height: 389, width: 36 }}>
-        <Stack spacing={2} direction="column"  alignItems="center" justifyContent="flex-start"  className="SliderBox"> 
-          <img src={Add} className="SliderIcon"/>
+        <Stack  direction="column"  alignItems="center" justifyContent="flex-start"  className="SliderBox"> 
+          <img src={Add} id="Add" className="SliderIcon"/>
           <PrettoSlider orientation="vertical" onChange={handleChange} value={value}/>
           <img src={Remove} className="SliderIcon"/>
           <ReturnButton className="ReturnButton">

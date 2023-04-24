@@ -4,6 +4,7 @@ import 'firebase/compat/firestore'
 import React, { useEffect } from 'react';
 import ToolBar from './ToolBar';
 import Content from './Content';
+import SearchBar from './SearchBar';
 
 
 

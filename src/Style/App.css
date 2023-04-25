@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter&display=medium');
 
 .OutsideWrapper {
   background-color: #f6f3e7;
@@ -6,6 +6,7 @@
   justify-content: center;
   overflow: hidden;
   font-family: 'Inter',  'sans-serif';
+  font-weight: 600;
 }
 .AppWrapper {
   width: 100%;
@@ -72,7 +73,6 @@
 }
 .toolbarText {
   font-family: 'Inter';
-  font-weight: 600;
   pointer-events: none;
   color: #a3a3a3;
 }
@@ -92,6 +92,7 @@
   z-index: 1;
   border-radius: 21px;
   background-color: white;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
   bottom: 0;
   right: 0;
   margin-right: 30px;
@@ -107,9 +108,35 @@
 }
 .SearchBarContainer {
   margin-top: 5%;
+  height: 50px;
   z-index: 1;
+  width: 80%;
 }
 .SearchBar {
-  height: 50px;
+  font-family: 'Inter', 'sans-serif';
+  height: 100%;
   width: 100%;
+  font-size: 20px;
+  color: #a3a3a3;
+  border: none;
+  border-radius: 27.5px;
+  padding: 12px 20px 12px 60px;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  background-color: none;
+  background-image: url('../svg/Search_Orange.svg');
+  background-position: 20px 15px; 
+  background-repeat: no-repeat;
+}
+.SearchBar:focus {
+  border: 0;
+  outline: none;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
 }

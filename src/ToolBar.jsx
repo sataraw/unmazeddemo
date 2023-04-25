@@ -1,7 +1,7 @@
 import React from 'react' 
 import goButton from './svg/Go-Button.svg'
 import settingButton from './svg/Settings-Button.svg'
-import searchButton from './svg/Search.svg'
+import compass from './svg/compass.svg'
 
 
 
@@ -14,10 +14,10 @@ function ToolBar() {
                     <span className='toolbarText'>Go</span>
                 </div>
             </button>
-            <button id='SupportButtonId'>
-                <img src={searchButton} className='toolbarImage'></img>
+            <button id='ExploreButton'>
+                <img src={compass} className='toolbarImage'></img>
                 <div>
-                    <span className='toolbarText'>Search</span>
+                    <span className='toolbarText'>Explore</span>
                 </div>
             </button>
             <button id='SettingButtonId'>

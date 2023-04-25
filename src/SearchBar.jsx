@@ -12,7 +12,9 @@ const SearchBar = () => {
     
 
     return <div className='SearchBarContainer'> 
-    <input type='search' 
+    <input 
+    className='SearchBar'
+    type='search' 
     placeholder='Search here'
     onChange={handleChange}
     value={searchInput}/> 

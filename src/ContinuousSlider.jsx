@@ -50,11 +50,11 @@ export default function ContinuousSlider() {
       <div className="SliderContainer">
         <Box sx={{ height: 389, width: 36 }}>
         <Stack  direction="column"  alignItems="center" justifyContent="flex-start"  className="SliderBox"> 
-          <img src={Add} id="Add" className="SliderIcon"/>
+          <img src={Add} id="Add" className="SliderIcon" alt='Add'/>
           <PrettoSlider orientation="vertical" onChange={handleChange} value={value}/>
-          <img src={Remove} className="SliderIcon"/>
+          <img src={Remove} className="SliderIcon" alt='Remove'/>
           <ReturnButton className="ReturnButton">
-            <img src={Return} />
+            <img src={Return} alt='return'/>
           </ReturnButton>
         </Stack>
       </Box>

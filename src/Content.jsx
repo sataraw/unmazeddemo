@@ -7,7 +7,7 @@ function Content() {
 
   return (
     <div className="contentWrapper">
-      <img src={currentImage} className="currentImage"></img>
+      <img src={currentImage} className="currentImage" alt='currentImage'></img>
       <ContinuousSlider/>
       <SearchBar className="SearchBar"/>
     </div>

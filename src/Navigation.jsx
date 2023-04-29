@@ -1,10 +1,9 @@
 import './Style/App.css';
 import firebase  from 'firebase/compat/app'
 import 'firebase/compat/firestore'
-import React, { useEffect } from 'react';
 import ToolBar from './ToolBar';
 import Content from './Content';
-import SearchBar from './SearchBar';
+import React from 'react';
 //import React from "react";
 import { useParams } from "react-router-dom";
 

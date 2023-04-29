@@ -1,11 +1,7 @@
 import './Style/App.css';
 import firebase  from 'firebase/compat/app'
 import 'firebase/compat/firestore'
-import React, { useEffect } from 'react';
-import ToolBar from './ToolBar';
-import Content from './Content';
-import SearchBar from './SearchBar';
-import { useParams } from "react-router-dom";
+import React from 'react';
 import { Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import LandingPage from "./LandingPage";
@@ -43,7 +39,7 @@ firebase.initializeApp(firebaseConfig)
 
 export default function App() { //hier war davor kein function
   return (
-    <>
+  <>
    <Routes>
     <Route exact path='/' element={<LandingPage />} />
     <Route path='/:id' element={<NavigationPage />} />

@@ -37,7 +37,7 @@ firebase.initializeApp(firebaseConfig)
   );
 } */
 
-gsap.from('.LandingPage_TUI', {duration: 1, y: '25%', x: '20%'});
+// gsap.from('.LandingPage_TUI', {duration: 1, y: '25%', x: '20%'});
 
 
 export default function App() { //hier war davor kein function

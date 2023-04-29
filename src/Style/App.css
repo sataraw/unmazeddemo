@@ -15,8 +15,9 @@
   justify-content: space-between;
   align-items: stretch;
   flex-direction: column;
-  min-height: 100dvh;
   min-height: -webkit-fill-available;
+  height: 100%;
+  height: 100dvh;
 }
 .App {
   overflow: hidden;

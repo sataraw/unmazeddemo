@@ -11,11 +11,6 @@ import { gsap } from 'gsap';
 
 
 
-
-
-
-
-
 export default function LandingPage() {
 return (
   <>
@@ -52,4 +47,4 @@ return (
 );
 }
 
-gsap.from('.LandingPage_TUI', {duration: 1, y: '25%', x: '20%'});
+// gsap.from('.LandingPage_TUI', {duration: 1, y: '25%', x: '20%'});

@@ -7,6 +7,7 @@ import Return from "./svg/returnButton.svg";
 import Slider from "@mui/material/Slider";
 import { styled } from '@mui/material/styles'; 
 import IconButton from '@mui/material/IconButton';
+import Player from "./Player";
 
 const PrettoSlider = styled(Slider)({
   color: '#ff8a3b',
@@ -39,7 +40,10 @@ const ReturnButton = styled(IconButton)({
     }
 })
 
-export default function ContinuousSlider() {
+export const SliderContext = React.createContext(50);
+
+function ContinuousSlider() {
+
   const [value, setValue] = React.useState(50);
 
   const handleChange = (event, newValue) => {
@@ -47,17 +51,21 @@ export default function ContinuousSlider() {
   }
 
     return (
-      <div className="SliderContainer">
-        <Box sx={{ height: 389, width: 36 }}>
-        <Stack  direction="column"  alignItems="center" justifyContent="flex-start"  className="SliderBox"> 
-          <img src={Add} id="Add" className="SliderIcon" alt='Add'/>
-          <PrettoSlider orientation="vertical" onChange={handleChange} value={value}/>
-          <img src={Remove} className="SliderIcon" alt='Remove'/>
-          <ReturnButton className="ReturnButton">
-            <img src={Return} alt='return'/>
-          </ReturnButton>
-        </Stack>
-      </Box>
-      </div>
+      <SliderContext.Provider value={value}>
+        <Player/>
+        <div className="SliderContainer">
+          <Box sx={{ height: 389, width: 36 }}>
+          <Stack  direction="column"  alignItems="center" justifyContent="flex-start"  className="SliderBox"> 
+            <img src={Add} id="Add" className="SliderIcon" alt='Add'/>
+            <PrettoSlider orientation="vertical" onChange={handleChange} value={value}/>
+            <img src={Remove} className="SliderIcon" alt='Remove'/>
+            <ReturnButton className="ReturnButton">
+              <img src={Return} alt='return'/>
+            </ReturnButton>
+          </Stack>
+        </Box>
+        </div>
+      </SliderContext.Provider>
     )
 }
+export default ContinuousSlider;

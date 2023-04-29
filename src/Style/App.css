@@ -7,6 +7,7 @@
   overflow: hidden;
   font-family: 'Inter',  'sans-serif';
   font-weight: 600;
+  box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 1);
 }
 .AppWrapper {
   width: 100%;
@@ -35,13 +36,6 @@
   overflow: hidden;
   height: 100%;
   width: 100%;
-}
-h1{
-  top: 0;
-  left: 0;
-  position: absolute;
-  color: white;
-  z-index: 1;
 }
 .PlayerWrapper  {
   position: relative;

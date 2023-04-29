@@ -6,6 +6,7 @@ import { Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import NavigationPage from "./Navigation";
+import { gsap } from 'gsap';
 
 
 
@@ -35,6 +36,8 @@ firebase.initializeApp(firebaseConfig)
     </div>
   );
 } */
+
+// gsap.from('.LandingPage_TUI', {duration: 1, y: '25%', x: '20%'});
 
 
 export default function App() { //hier war davor kein function

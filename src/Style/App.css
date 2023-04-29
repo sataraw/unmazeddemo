@@ -46,6 +46,90 @@
   pointer-events: none;
 }
 
+.LandingWrapper_Outside {
+  overflow: hidden;
+  background-color: #FFFF;
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 67px;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.LandingPage_Circle {
+  position: absolute;
+  background-color: #FF8A3B;
+  width: 175%;
+  left: auto;
+  top: auto;
+  right: -39%;
+  bottom: 0vh;
+  padding-bottom: 120%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  box-flex: center;
+
+}
+
+.LandingWrapper_Logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  grid-column-gap: 32px;
+  justify-content: center;
+}
+
+.LandingPage_TUI {
+  height: 64px;
+}
+
+.LandingPage_UnmazedLogo {
+  height: 64px;
+}
+
+.LandingWrapper_Text {
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 5px;
+  align-items: center;
+  pointer-events: none;
+}
+
+.LandingPage_UnmazedText {
+  z-index: 5;
+  pointer-events: none;
+  padding-bottom: 0;
+  height: 16px;
+  color: #FFF;
+}
+
+.LandingPage_Text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 0px;
+  text-align: center;
+  color: #FFFF;
+}
+
+.LandingPage_GoButton {
+  position: absolute;
+  z-index: 6;
+  color: #000;
+  top: 22%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translateX(-50%);
+}
+
+
+
 
 .toolbar {
   display: flex;

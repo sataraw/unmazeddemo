@@ -3,6 +3,7 @@ import logo from './images/Unmazed Schwarz.svg'
 import construction from './images/construction.svg'
 import firebase  from 'firebase/compat/app'
 import 'firebase/compat/firestore'
+import React from 'react';
 
 const firebaseConfig = {
   apiKey: "AIzaSyC4y1MM8bx8Qi2qGWDYRXzCClJkyK-e7Ys",

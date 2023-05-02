@@ -11,7 +11,7 @@ function ToolBar() {
             <button id='GoButtonId'>
                <img src={goButton} className='toolbarImage' alt='goButton'></img>
                <div>
-                    <span className='toolbarText'>Go</span>
+                    <span className='toolbarText' id='GoText'>Go</span>
                 </div>
             </button>
             <button id='ExploreButton'>

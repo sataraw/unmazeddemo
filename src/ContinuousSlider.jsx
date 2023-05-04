@@ -63,7 +63,7 @@ const ReturnButton = styled(IconButton)({
 
 export const SliderContext = React.createContext(50);
 
-function ContinuousSlider() {
+function ContinuousSlider({disabled}) {
   const [value, setValue] = React.useState(33);
 
   const handleChange = (event, newValue) => {
@@ -87,6 +87,7 @@ function ContinuousSlider() {
         returnClicked={returnClicked}
         onReturnClicked={handleReturnClicked}
         onReturnReset={handleReturnReset}
+        disabled={disabled}
       />
       <div className="SliderContainer">
         <Box sx={{ height: 389, width: 36 }}>
@@ -103,6 +104,7 @@ function ContinuousSlider() {
               value={value}
               valueLabelDisplay="auto"
               valueLabelFormat={(0.5 + (value / 100) * 1.5).toFixed(1) + 'x'}
+              disabled={disabled}
             />
             <img src={Remove} className="SliderIcon" alt="Remove" />
             <ReturnButton

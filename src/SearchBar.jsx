@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const SearchBar = () => {
+const SearchBar = ({disabled}) => {
     const [searchInput, setSearchInput] = useState("");
     const handleChange = (e) => {
         e.preventDefault();
@@ -16,8 +16,10 @@ const SearchBar = () => {
     className='SearchBar'
     type='search' 
     placeholder='Search here'
-    onChange={handleChange}
-    value={searchInput}/> 
+    onChange={handleChange} 
+    value={searchInput}
+    disabled={disabled}
+    /> 
     </div>
 };
 export default SearchBar;

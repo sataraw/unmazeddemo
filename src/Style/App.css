@@ -40,6 +40,7 @@
   position: absolute;
   width: 100vh;
   height: 100vh;
+  z-index: 0;
 }
 
 .player {
@@ -206,6 +207,36 @@
   height: 50px;
   z-index: 1;
   width: 80%;
+}
+.tutorialTextbox {
+  pointer-events: all !important;
+  position: absolute;
+  max-width: 10rem;
+  z-index: 2;
+  font-weight: 400;
+  background-color: white;
+  border-radius:  21px;
+  border-bottom-left-radius: 0;
+  font-family: 'Inter';
+  pointer-events: none;
+  color: #a3a3a3;
+  padding: 1rem;
+  top: 30%;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+ #id1.tutorialTextbox {
+  border-radius:  21px;
+  border-bottom-right-radius: 0;
+  right: 17% !important;
+}
+.textboxButton {
+  z-index: 2;
+  font-family: 'Inter';
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1.5rem;
 }
 .SearchBar {
   font-family: 'Inter', 'sans-serif';

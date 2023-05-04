@@ -32,7 +32,7 @@ function Player(props) {
     const speed = React.useContext(SliderContext); 
     const playbackRate = 0.25 + (speed * 0.015);
 
-    const [playing, setPlaying] = React.useState(true);
+    const [playing, setPlaying] = React.useState(false);
 
     const handleTap = () => {
       setPlaying(!playing);
@@ -40,7 +40,7 @@ function Player(props) {
     };
 
     return (
-    <div className="playerWrapper" onClick={handleTap}>
+    <div className="playerWrapper" style={{pointerEvents: props.disabled ? "none" : "auto" }}  onClick={handleTap}>
         <ReactPlayer 
         className="player" 
         url={videoUrl}

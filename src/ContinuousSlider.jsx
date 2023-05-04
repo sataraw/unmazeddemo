@@ -84,6 +84,7 @@ function ContinuousSlider({disabled}) {
   return (
     <SliderContext.Provider value={value}>
       <Player
+        controls disablePictureInPicture controlsList="nodownload"
         returnClicked={returnClicked}
         onReturnClicked={handleReturnClicked}
         onReturnReset={handleReturnReset}

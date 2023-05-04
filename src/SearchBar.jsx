@@ -4,7 +4,7 @@ const SearchBar = ({disabled}) => {
     const [searchInput, setSearchInput] = useState("");
     const handleChange = (e) => {
         e.preventDefault();
-        setSearchInput(e.target.value);
+        setSearchInput("");
         if (searchInput.length > 0) {
             return 0;
         }
